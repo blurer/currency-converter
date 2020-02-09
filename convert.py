@@ -105,4 +105,6 @@ elif startingUnit == 'gbp':
     print('JPY:', converted_GBP_JPY)
     print('EUR:', converted_GBP_EUR)
 else:
-    print('Error. Try with caps or another currency.')
+    print('Error. Try another currency.')
+    print('Use: USD, JPY, GBP, EUR, PHP.')
+
