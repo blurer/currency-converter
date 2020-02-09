@@ -5,12 +5,13 @@ Python currency converter
 
 Usage:
 ```
-Currency: usd
-How much: 1000
-```
+# pi @ BL-Pi4 in ~/currency-converter on git:master o [9:40:20] C:126
+$ chmod +x convert.py
 
-Output:
-```
+# pi @ BL-Pi4 in ~/currency-converter on git:master x [9:40:24]
+$ ./convert.py
+Currency: USD
+How much: 1000
 JPY: 110000.0
 PHP: 50950.0
 JPY: 1500.0
