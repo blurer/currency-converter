@@ -3,6 +3,7 @@
 startingUnit = input('Currency: ')
 startingValue = input('How much: ')
 startingValue = float(startingValue)
+print('--------------------')
 
 # usd to other
 usd_jpy = 110
@@ -30,6 +31,11 @@ jpy_php = 0.46
 php_usd = 0.02
 php_jpy = 2.15
 
+# inr to other
+inr_usd = 0.014 
+inr_eur = 0.013
+inr_gbp = 0.011
+
 if startingUnit == 'USD':
     converted_USD_JPY = round(startingValue * usd_jpy, 2)
     converted_USD_PHP = round(startingValue * usd_php, 2)
@@ -39,8 +45,8 @@ if startingUnit == 'USD':
     converted_USD_GBP = round(startingValue * usd_gbp, 2)
     print('JPY:', converted_USD_JPY)
     print('PHP:', converted_USD_PHP)
-    print('JPY:', converted_USD_AUD)
-    print('PHP:', converted_USD_INR)
+    print('AUD:', converted_USD_AUD)
+    print('INR:', converted_USD_INR)
     print('GBP:', converted_USD_GBP)
     print('EUR:', converted_USD_EUR)
 elif startingUnit == 'usd':
@@ -52,8 +58,8 @@ elif startingUnit == 'usd':
     converted_USD_GBP = round(startingValue * usd_gbp, 2)
     print('JPY:', converted_USD_JPY)
     print('PHP:', converted_USD_PHP)
-    print('JPY:', converted_USD_AUD)
-    print('PHP:', converted_USD_INR)
+    print('AUD:', converted_USD_AUD)
+    print('INR:', converted_USD_INR)
     print('GBP:', converted_USD_GBP)
     print('EUR:', converted_USD_EUR)
 elif startingUnit == 'JPY':
@@ -104,6 +110,20 @@ elif startingUnit == 'gbp':
     print('USD:', converted_GBP_USD)
     print('JPY:', converted_GBP_JPY)
     print('EUR:', converted_GBP_EUR)
+elif startingUnit == 'INR':
+    converted_INR_USD = round(startingValue * inr_usd, 2)
+    converted_INR_EUR = round(startingValue * inr_eur, 2)
+    converted_INR_GBP = round(startingValue * inr_gbp, 2)
+    print('USD:', converted_INR_USD)
+    print('EUR:', converted_INR_EUR)
+    print('GBP:', converted_INR_GBP)
+elif startingUnit == 'inr':
+    converted_INR_USD = round(startingValue * inr_usd, 2)
+    converted_INR_EUR = round(startingValue * inr_eur, 2)
+    converted_INR_GBP = round(startingValue * inr_gbp, 2)
+    print('USD:', converted_INR_USD)
+    print('EUR:', converted_INR_EUR)
+    print('GBP:', converted_INR_GBP)
 else:
     print('Error. Try another currency.')
     print('Use: USD, JPY, GBP, EUR, PHP.')
